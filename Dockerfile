@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /usr/src/app
 
 # Copy the current directory contents into the container
-COPY ./app .
+COPY ./myapp .
 
 # Install the required Python packages
 RUN pip install --no-cache-dir flask
