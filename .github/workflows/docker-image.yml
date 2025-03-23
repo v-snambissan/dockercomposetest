@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.AZURE_REGISTRY_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build . -t ${{ secrets.AZURE_REGISTRY_LOGIN_SERVER }}/testsecretscontaineronwebapp:latest
+        run: docker build . -t sndockercomposetest.azurecr.io/testsecretscontaineronwebapp:latest
 
       - name: Push Docker image
-        run: docker push ${{ secrets.AZURE_REGISTRY_LOGIN_SERVER }}/testsecretscontaineronwebapp:latest
+        run: docker push sndockercomposetest.azurecr.io/testsecretscontaineronwebapp:latest
